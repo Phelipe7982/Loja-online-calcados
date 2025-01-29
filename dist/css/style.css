@@ -249,7 +249,8 @@ main {
     gap: 0.75rem;
     padding: 1rem;
     width: 15rem;
-    background-color: var(--bg-card);
+    background-color: #fff;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, .3);
     border-radius: 1rem;
 }
 
@@ -277,7 +278,7 @@ main {
     width: 100%;
     font-size: 1rem;
     font-weight: 600;
-    color: var(--light);
+    color: var(--zinc-800);
     text-transform: capitalize;
     text-wrap: nowrap;
     text-overflow: ellipsis;
@@ -285,7 +286,7 @@ main {
 
 .size {
     font-size: 0.75rem;
-    color: var(--light);
+    color: var(--zinc-800);
 }
 
 .list-size {
@@ -329,7 +330,7 @@ main {
 .price-product {
     font-size: 1.3rem;
     font-weight: 700;
-    color: var(--light);
+    color: var(--zinc-800-dark);
 }
 
 /* Cart Products Button */
@@ -341,10 +342,10 @@ main {
     text-align: center;
     font-weight: bold;
     padding: 0.7em 1em;
-    border: 1px solid #FF0072;
+    border: 1px solid var(--bg-card-dark);
     position: relative;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
-    color: #FF0072;
+    color: var(--zinc-800);
     text-decoration: none;
     transition: 0.3s ease all;
     z-index: 1;
@@ -360,7 +361,7 @@ main {
     bottom: 0;
     opacity: 0;
     content: '';
-    background-color: #FF0072;
+    background-color: var(--bg-card-dark);
     z-index: -1;
 }
 
@@ -454,4 +455,41 @@ main {
 .dark .button .svg {
     width: 30px;
     stroke: #37474f;
+}
+
+.dark .card {
+    background-color: #37474f;
+    color: #fff;
+}
+
+.dark .image_container {
+    background-color: #677379;
+}
+
+.dark .title {
+    color: var(--light)
+}
+
+.dark .size {
+    color: var(--light);
+}
+
+.dark .price-product {
+    color: var(--light);
+}
+
+.dark .btn-cart-products {
+    background-color: #37474f;
+    color: var(--light);
+    border: 1px solid var(--light);
+}
+
+.dark .btn-cart-products:before {
+    background-color: var(--light);
+    color: var(--bg-card-dark);
+}
+
+.dark .btn-cart-products:hover,
+.dark .btn-cart-products:focus {
+    color: var(--zinc-800-dark);
 }
