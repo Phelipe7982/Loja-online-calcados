@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js" defer></script>
+    <title>Loja Online Calçados</title>
+</head>
+
+<body>
+    <header>
+        <h2 id="mode-title">Light Mode</h2>
+
+        <div class="group">
+            <svg class="icon" aria-hidden="true" viewBox="0 0 24 24">
+                <g>
+                    <path
+                        d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z">
+                    </path>
+                </g>
+            </svg>
+            <input placeholder="Pesquisar mais produtos" type="search" class="input">
+        </div>
+
+        <div>
+            <input type="checkbox" name="change-theme" id="change-theme">
+            <label for="change-theme">
+                <i class="bi bi-sun"></i>
+                <i class="bi bi-moon"></i>
+            </label>
+        </div>
+    </header>
+    <main>
+        <span class="discount">25% de desconto</span>
+        <!-- Promo Card -->
+        <div class="card-promo">
+            <div class="card-image">
+                <span>Nike</span>
+                <img src="./img/tenis.png" alt="Tênis da Nike">
+            </div>
+            <div class="card-details">
+                <h2 class="product-title">Tênis Nike</h2>
+                <p class="subtitle">Excelênte para corridas</p>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum ratione voluptas
+                    in delectus ad natus optio hic et voluptatem rerum accusantium, sit necessitatibus qui autem,
+                    quidem, distinctio nemo? Rem, in.</p>
+
+                <div class="price-container">
+                    <span class="price-product" id="promotion-price">578.75</span>
+                    <button type="button" class="button">
+                        <span class="button__text">Comprar</span>
+                        <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                viewBox="0 0 24 24" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"
+                                stroke="currentColor" height="24" fill="none" class="svg">
+                                <line y2="19" y1="5" x2="12" x1="12"></line>
+                                <line y2="12" y1="12" x2="19" x1="5"></line>
+                            </svg></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+        <!-- Product Cards -->
+        <div class="card-products">
+            <!-- Produto #1 -->
+            <div class="card">
+                <div class="image_container">
+                    <img src="./img/nike1.png" alt="Foto de um tênis da Nike azul.">
+                </div>
+                <div class="title">
+                    <span>Nike Forj Aqua 23</span>
+                </div>
+                <div class="size">
+                    <span>Tamanho</span>
+                    <ul class="list-size">
+                        <li class="item-list"><button class="item-list-button">37</button></li>
+                        <li class="item-list"><button class="item-list-button">38</button></li>
+                        <li class="item-list"><button class="item-list-button">39</button></li>
+                        <li class="item-list"><button class="item-list-button">40</button></li>
+                        <li class="item-list"><button class="item-list-button">41</button></li>
+                    </ul>
+                </div>
+                <div class="action">
+                    <div class="price">
+                        <span class="price-product">356.5</span>
+                    </div>
+                    <button class="btn-cart-products">Comprar</button>
+                </div>
+            </div>
+
+            <!-- Produto #2 -->
+            <div class="card">
+                <div class="image_container">
+                    <img src="./img/nike2.png" alt="">
+                </div>
+                <div class="title">
+                    <span>Nike P-6000 SE Flex</span>
+                </div>
+                <div class="size">
+                    <span>Tamanho</span>
+                    <ul class="list-size">
+                        <li class="item-list"><button class="item-list-button">37</button></li>
+                        <li class="item-list"><button class="item-list-button">38</button></li>
+                        <li class="item-list"><button class="item-list-button">39</button></li>
+                        <li class="item-list"><button class="item-list-button">40</button></li>
+                        <li class="item-list"><button class="item-list-button">41</button></li>
+                    </ul>
+                </div>
+                <div class="action">
+                    <div class="price">
+                        <span class="price-product">745.9</span>
+                    </div>
+                    <button class="btn-cart-products">Comprar</button>
+                </div>
+            </div>
+
+            <!-- Produto #3 -->
+            <div class="card">
+                <div class="image_container">
+                    <img src="./img/nike3.png" alt="">
+                </div>
+                <div class="title">
+                    <span>Nike Next Nature VKX</span>
+                </div>
+                <div class="size">
+                    <span>Tamanho</span>
+                    <ul class="list-size">
+                        <li class="item-list"><button class="item-list-button">37</button></li>
+                        <li class="item-list"><button class="item-list-button">38</button></li>
+                        <li class="item-list"><button class="item-list-button">39</button></li>
+                        <li class="item-list"><button class="item-list-button">40</button></li>
+                        <li class="item-list"><button class="item-list-button">41</button></li>
+                    </ul>
+                </div>
+                <div class="action">
+                    <div class="price">
+                        <span class="price-product">325.9</span>
+                    </div>
+                    <button class="btn-cart-products">Comprar</button>
+                </div>
+            </div>
+
+            <!-- Produto #4 -->
+            <div class="card">
+                <div class="image_container">
+                    <img src="./img/nike4.png" alt="">
+                </div>
+                <div class="title">
+                    <span>Nike Gamma Force Sail</span>
+                </div>
+                <div class="size">
+                    <span>Tamanho</span>
+                    <ul class="list-size">
+                        <li class="item-list"><button class="item-list-button">37</button></li>
+                        <li class="item-list"><button class="item-list-button">38</button></li>
+                        <li class="item-list"><button class="item-list-button">39</button></li>
+                        <li class="item-list"><button class="item-list-button">40</button></li>
+                        <li class="item-list"><button class="item-list-button">41</button></li>
+                    </ul>
+                </div>
+                <div class="action">
+                    <div class="price">
+                        <span class="price-product">619.99</span>
+                    </div>
+                    <button class="btn-cart-products">Comprar</button>
+                </div>
+            </div>
+
+            <!-- Produto #5 -->
+            <div class="card">
+                <div class="image_container">
+                    <img src="./img/nike5.png" alt="">
+                </div>
+                <div class="title">
+                    <span>Nike Cortez Pure FV5400</span>
+                </div>
+                <div class="size">
+                    <span>Tamanho</span>
+                    <ul class="list-size">
+                        <li class="item-list"><button class="item-list-button">37</button></li>
+                        <li class="item-list"><button class="item-list-button">38</button></li>
+                        <li class="item-list"><button class="item-list-button">39</button></li>
+                        <li class="item-list"><button class="item-list-button">40</button></li>
+                        <li class="item-list"><button class="item-list-button">41</button></li>
+                    </ul>
+                </div>
+                <div class="action">
+                    <div class="price">
+                        <span class="price-product">799.99</span>
+                    </div>
+                    <button class="btn-cart-products">Comprar</button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+</body>
+
+</html>
