@@ -8,24 +8,29 @@
 html,
 body {
     height: 100%;
+    overflow-y: auto;
     background-color: #eceff1;
     transition: .4s;
 }
 
 input[type="checkbox"] {
+    /*  Ocultar o checkbox para o dark mode */
     display: none;
 }
 
 .bi {
+    /*  Icones */
     font-size: 1.3rem;
     cursor: pointer;
 }
 
 .bi-moon {
+    /*  Icone do Dark Mode */
     display: none;
 }
 
 header {
+    /*  Header */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -36,6 +41,7 @@ header {
 }
 
 .group {
+    /*  Pesquisar mais produtos */
     display: flex;
     line-height: 28px;
     align-items: center;
@@ -43,6 +49,7 @@ header {
 }
 
 .input {
+    /*  Pesquisar mais produtos */
     width: 650px;
     height: 40px;
     line-height: 28px;
@@ -72,6 +79,7 @@ header {
 }
 
 .icon {
+    /*  Ícone do pesquisar mais produtos */
     position: absolute;
     left: 1rem;
     fill: #9e9ea7;
@@ -80,6 +88,7 @@ header {
 }
 
 main {
+    /*  Main */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -87,7 +96,8 @@ main {
 }
 
 .discount {
-    position: absolute;
+    /*  Desconto */
+    position: relative;
     top: 6rem;
     background-color: #f44336;
     padding: .5rem 1rem;
@@ -99,6 +109,7 @@ main {
 }
 
 .card-promo {
+    /*  Card de promoção */
     margin-top: 4rem;
     display: flex;
     width: 60%;
@@ -107,6 +118,7 @@ main {
 }
 
 .card-image {
+    /*  Imagem do card de promoção */
     padding: 2rem;
     width: 50%;
     position: relative;
@@ -114,11 +126,13 @@ main {
 }
 
 .card-image span {
+    /*  Span do card de promoção */
     font-size: 6rem;
     font-weight: 900;
 }
 
 .card-promo img {
+    /*  Imagem do card de promoção */
     width: 130%;
     transform: rotate(-25deg);
     position: absolute;
@@ -127,16 +141,19 @@ main {
 }
 
 .card-details {
+    /*  Detalhes do card de promoção */
     width: 50%;
     padding: 2rem;
 }
 
 .card-details h2 {
+    /*  Titulo do card de promoção */
     font-size: 3rem;
     margin-bottom: 1rem;
 }
 
 .subtitle {
+    /*  Subtitulo do card de promoção */
     color: #444;
     text-transform: uppercase;
     font-weight: bold;
@@ -144,25 +161,30 @@ main {
 }
 
 .description {
+    /*  Descricao do card de promoção */
     line-height: 1.6rem;
     margin-bottom: 2rem;
 }
 
 .price-container {
+    /*  Div do card de preço da promoção */
     display: flex;
     justify-content: space-between;
 }
 
 .price {
+    /*  Preço do card de promoção */
     font-weight: 900;
     font-size: 2rem;
 }
 
 #promotion-price {
+    /*  Preço do card de promoção */
     font-size: 2rem;
 }
 
 .button {
+    /*  Botão de compra do card de promoção */
     background-color: #3aa856;
     position: relative;
     width: 150px;
@@ -222,17 +244,25 @@ main {
     border: 1px solid #2e8644;
 }
 
+#first-card-products {
+    margin-top: 10rem;
+}
+
 /* Products Cards */
 .card-products {
-    margin-top: 10rem;
+    /* Div dos cards de produtos */
+    margin-top: -6rem;
     margin-bottom: 10rem;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
     gap: 2rem;
 }
 
 .card {
+    /* Card de produtos */
+    /* Variaveis de cores */
     --bg-card: #8b8383;
     --bg-card-dark: #27272a;
     --primary: #6d28d9;
@@ -245,6 +275,8 @@ main {
 
     position: relative;
     display: flex;
+    flex-grow: 1;
+    flex-basis: 200;
     flex-direction: column;
     gap: 0.75rem;
     padding: 1rem;
@@ -255,6 +287,7 @@ main {
 }
 
 .image_container {
+    /* Div da imagem do card de produtos */
     overflow: hidden;
     cursor: pointer;
     position: relative;
@@ -266,6 +299,7 @@ main {
 }
 
 .image_container img {
+    /* Imagem do card de produtos */
     position: absolute;
     top: 50%;
     left: 50%;
@@ -274,6 +308,7 @@ main {
 }
 
 .title {
+    /* Titulo do card de produtos */
     overflow: clip;
     width: 100%;
     font-size: 1rem;
@@ -285,11 +320,13 @@ main {
 }
 
 .size {
+    /* Div dos tamanhos dos produtos do card */
     font-size: 0.75rem;
     color: var(--zinc-800);
 }
 
 .list-size {
+    /* Lista dos tamanhos dos produtos do card */
     display: flex;
     align-items: center;
     gap: 0.25rem;
@@ -297,41 +334,46 @@ main {
 }
 
 .list-size .item-list {
+    /* Item da lista dos tamanhos dos produtos do card */
     list-style: none;
 }
 
 .list-size .item-list-button {
+    /* Botão dos tamanhos dos produtos do card */
     cursor: pointer;
     padding: 0.5rem;
-    background-color: var(--zinc-800);
+    background-color: transparent;
     font-size: 0.75rem;
-    color: var(--light);
+    color: var(--zinc-800);
     border: 2px solid var(--zinc-800);
     border-radius: 0.25rem;
     transition: all 0.3s ease-in-out;
 }
 
 .item-list-button:hover {
-    border: 2px solid var(--light);
+    border: 2px solid #f44336;
 }
 
 .item-list-button:focus {
-    background-color: var(--primary);
+    background-color: #f44336;
     border: 2px solid var(--primary-shadow);
-    box-shadow: inset 0px 1px 4px var(--primary-shadow);
+    color: var(--light);
 }
 
 .action {
+    /* Div dos botoes do card de produtos */
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 .price-product {
+    /* Preço do card de produtos */
     font-size: 1.3rem;
     font-weight: 700;
     color: var(--zinc-800-dark);
 }
+
 
 /* Cart Products Button */
 .btn-cart-products {
@@ -384,6 +426,10 @@ main {
 
 
 
+
+
+
+
 /* Dark Theme */
 .dark,
 .dark main,
@@ -393,14 +439,17 @@ main {
 }
 
 .dark .bi-sun {
+    /* Ícone de sol do header */
     display: none;
 }
 
 .dark .bi-moon {
+    /* Ícone de lua do header */
     display: block;
 }
 
 .dark .input {
+    /* Input do header */
     background-color: #273035;
     color: #eceff1;
 }
@@ -418,36 +467,44 @@ main {
 }
 
 .dark .discount {
+    /* Desconto do card de promoção */
     background-color: #67b4f3;
     color: #fff;
 }
 
 .dark .card-promo {
+    /* Card de promoção */
     background-color: #37474f;
 }
 
 .dark .card-image {
+    /* Imagem do card de promoção */
     background-color: #273035;
 }
 
 .dark .product-title {
+    /* Titulo do card de promoção */
     color: #2196f3;
 }
 
 .dark .subtitle {
+    /* Subtitulo do card de promoção */
     color: #fff;
 }
 
 .dark .description {
+    /* Descricao do card de promoção */
     color: #67b4f3;
 }
 
 .dark .button {
+    /* Botão do card de promoção */
     background-color: #37474f;
     border: 1px solid #fff;
 }
 
 .dark .button .button__icon {
+    /* Ícone do botão do card de promoção */
     background-color: #fff;
     color: #37474f;
 }
@@ -458,27 +515,48 @@ main {
 }
 
 .dark .card {
+    /* Card de produtos */
     background-color: #37474f;
     color: #fff;
 }
 
 .dark .image_container {
+    /* Imagem do card de produtos */
     background-color: #677379;
 }
 
 .dark .title {
+    /* Titulo do card de produtos */
     color: var(--light)
 }
 
 .dark .size {
+    /* Tamanho dos produtos do card */
     color: var(--light);
 }
 
+.dark .list-size .item-list-button {
+    /* Item da lista dos tamanhos dos produtos do card */
+    color: var(--light);
+    background-color: var(--zinc-800-dark);
+}
+
+.dark .item-list-button:hover {
+    border: 2px solid #67b4f3;
+}
+
+.dark .item-list-button:focus {
+    background-color: #67b4f3;
+    color: var(--zinc-800-dark);
+}
+
 .dark .price-product {
+    /* Preço dos produtos do card */
     color: var(--light);
 }
 
 .dark .btn-cart-products {
+    /* Botão de compra do card de produtos */
     background-color: #37474f;
     color: var(--light);
     border: 1px solid var(--light);
